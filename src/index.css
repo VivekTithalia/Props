@@ -1,27 +1,91 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.forheading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.firsthr {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 20px;
+}
 
+.container {
+  /* margin-top: 10px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.firstcenter{
-    text-align: center;
+.title {
+  margin-left: 3px;
 }
-.container{
-    margin-top: 10px;
-    /* border:1px solid black; */
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.para {
+  margin-left: 3px;
+  margin-bottom: 5px;
 }
 
-.items{
-    max-width: 300px;
-    width: 100%;
-    padding: 10px 10px;
-    background: #893535;
-    color: white;
-    border-radius: 16px;
-    margin-bottom: 10px;
+.items {
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid #d0b4b4;
+  margin: 10px;
+  transition: all 0.5s linear;
+}
+.items:hover {
+  box-shadow: 2px 21px 12px #daa7a7;
+}
+.forimg img {
+  max-width: 300px;
+  width: 100%;
+}
+.forbutton {
+  padding-left: 3px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 11px;
+  background: #b35050;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s linear;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+@media (max-width: 950px) {
+  .container {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 638px) {
+  .items {
+    max-width: 600px;
+  }
+  .forcenter{
+    font-size: 1.1rem;
+  }
+  .title h2{
+    font-size: 1.1rem;
+  }
+  .para p{
+    font-size: 1.1rem;
+  }
+  .btn{
+    padding: 11px 20px;
+  }
 }

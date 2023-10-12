@@ -1,31 +1,61 @@
-import React from 'react'
+import React from "react";
 
 const Home = (props) => {
   return (
     <>
-    
-        
-    <div className="container">
+      
+      <div className="container">
         <div className="items">
-            <h3>Name: {props.name}</h3>
-            <h3>age:{props.age}</h3>
-            <h3>city:{props.city}</h3>
+          <div className="forimg">
+            <img src={props.ime} alt="" />
+          </div>
+          <div className="title">
+            <h2>{props.title}</h2>
+          </div>
+          <div className="para">
+            <p>
+              {props.para}
+            </p>
+          </div>
+          <div className="forbutton">
+            <button className="btn">View More</button>
+          </div>
         </div>
         <div className="items">
-            <h3>Name: {props.name1}</h3>
-            <h3>age:{props.age1}</h3>
-            <h3>city:{props.city1}</h3>
+          <div className="forimg">
+            <img src={props.ime2} alt="" />
+          </div>
+          <div className="title">
+            <h2>{props.title2}</h2>
+          </div>
+          <div className="para">
+            <p>
+             {props.para2}
+            </p>
+          </div>
+          <div className="forbutton">
+            <button className="btn">View More</button>
+          </div>
         </div>
         <div className="items">
-            <h3>Name: {props.name3}</h3>
-            <h3>age:{props.age3}</h3>
-            <h3>city:{props.city3}</h3>
+          <div className="forimg">
+            <img src={props.ime3} alt="" />
+          </div>
+          <div className="title">
+            <h2>{props.title3}</h2>
+          </div>
+          <div className="para">
+            <p>
+              {props.para3}
+            </p>
+          </div>
+          <div className="forbutton">
+            <button className="btn">View More</button>
+          </div>
         </div>
-        
-    </div>
-    
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
